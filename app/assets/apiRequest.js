@@ -1,4 +1,4 @@
-const getAllInfo = () => {
+//const getAllInfo = () => {
     try{
         var promise = [
             client.data.get('contact'),
