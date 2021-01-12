@@ -1,0 +1,212 @@
+.customerDetail {
+  text-decoration: none !important;
+  margin-left    : 10%;
+  cursor         : pointer;
+  margin-bottom  : 20%;
+  display        : none;
+  margin-top     : 20%;
+  color          : #2c5cc5;
+  font-weight    : 700;
+}
+
+.fw-widget-wrapper {
+  display: none;
+}
+
+#btn,
+#update {
+  outline         : none !important;
+  display         : block;
+  width           : 68%;
+  border-radius   : 4px;
+  color           : #fff;
+  outline         : 0;
+  background-color: #264966;
+  border          : 1px solid #12344d;
+  background-image: linear-gradient(to bottom, #264966, #12344d);
+  letter-spacing  : 0.3px;
+  font-weight     : 500;
+  transition      : 50ms ease-in;
+  padding         : 8px 15px;
+  font-size       : 1.2rem;
+  text-transform  : uppercase;
+  margin-left     : 15%;
+}
+
+.spinner1,
+.spinner {
+  margin-left: 40%;
+}
+
+.orders {
+  margin-left: 2%;
+  cursor     : pointer;
+  display    : block;
+  margin-top : 5%;
+}
+
+.customer-name {
+  color: black !important;
+}
+
+.mg-l-25 {
+  margin-left: 25%;
+}
+
+.container {
+  min-height     : 100vh;
+  justify-content: center;
+  align-items    : center;
+  display        : flex;
+  text-align     : center;
+}
+
+.container div>p span {
+  color: red;
+}
+
+p {
+  position: relative;
+  top     : 30px;
+}
+
+p a {
+  color          : black;
+  text-decoration: none;
+}
+
+button {
+  cursor       : pointer;
+  border       : 0;
+  border-radius: 4px;
+  font-weight  : 600;
+  width        : 180px;
+  padding      : 10px 0;
+  box-shadow   : 0 0 20px rgba(104, 85, 224, 0.2);
+  transition   : 0.4s;
+  margin-left  : -15% !important;
+}
+
+.reg {
+  color           : white;
+  background-color: #55279e;
+}
+
+.log {
+  color           : rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  border          : 1px solid #55279e;
+}
+
+button:hover {
+  color           : white;
+  box-shadow      : 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: #55279e;
+}
+
+a {
+  display    : block;
+  color      : #2c5cc5;
+  font-weight: 700;
+}
+
+.customer-name,
+.child-transactions {
+  text-decoration: none !important;
+}
+
+.list {
+  font-weight  : 600 !important;
+  font-size    : 90%;
+  margin-left  : 8%;
+  margin-bottom: 10%;
+}
+
+.list-hr {
+  border       : 0;
+  border-top   : 1px solid #dcdcdc;
+  margin-bottom: 2%;
+  margin-top   : 2%;
+}
+
+.spinner {
+  margin-left: 30%;
+}
+
+/* dialog template css */
+.dialog-box {
+  margin          : 10% 0% 10% 0%;
+  padding         : 9px 15px 9px 15px;
+  border          : 1px solid #dedede;
+  background-color: #fff;
+  width           : 96%;
+  box-shadow      : 0 4px 8px 0 rgba(213, 212, 212, 0.2), 0 6px 20px 0 rgba(163, 161, 161, 0.19);
+}
+
+.yes-btn {
+  margin-left: -4%;
+}
+
+.no-btn {
+  margin-left: 1%
+}
+
+/* dialog template css end */
+.search-btn {
+  margin-left: 20%;
+}
+
+.mg-t-15 {
+  margin-top: 15%;
+}
+
+.mg-t-5 {
+  margin-top: 5%;
+}
+
+.mg-b-5 {
+  margin-bottom: 5%;
+}
+
+.bb-hash {
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  display: none;
+}
+
+.order-additional {
+  border       : 1px solid #46749c;
+  border-radius: 2%;
+  /* display: none; */
+}
+.additional-items{
+  padding: 5%;
+}
+
+.table-container {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.table-data {
+  text-align: left;
+  padding: 3px;
+}
+
+.tr-data:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.update-btn{
+  text-align: right;
+  margin-top: 10px;
+}
+
+.error-message{
+  text-align: center;
+}

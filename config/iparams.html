@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>Customer Details</title>
+  <script type="module" src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@freshworks/crayons/dist/crayons/crayons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel='stylesheet' type='text/css' href='https://static.freshdev.io/fdk/2.0/assets/freshdesk.css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./assets/iparams.css">
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  <script type="text/javascript">
+    function getConfigs() { }
+    function postConfigs() { }
+  </script>
+  <script src="./assets/iparams.js"></script>
+  <div class="right-contain">
+    <span id="comm-validation" class="validation"> </span>
+    <section class="mar-bot">
+      <h3 class="section-heading">
+        <span>freshdesk credentials</span>
+      </h3>
+      <div id="verification">
+        <fw-input label="Domain Name" icon-left="add-contact" id="domain" state-text="Ex: acme.freshdesk.com"
+          state="normal" placeholder="Enter your domain name" required clear-input></fw-input>
+        <fw-input label="Api Key" icon-left="password" type="password" id="api-key"
+          state-text="You can find your api key under profile" state="normal" placeholder="Enter your api key" required
+          clear-input></fw-input>
+        <fw-button id="submit-btn" color="primary" class="authenticate"> Authenticate </fw-button>
+      </div>
+    </section>
+    <div class="overlay">
+      <svg class="spinner" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="25" fill="#567ac3"></circle>
+        <circle class="path" cx="25" cy="25" r="18" fill="none" stroke-width="3"></circle>
+      </svg>
+    </div>
+    <section class="mar-bot tdl-credentials">
+      <h3 class="section-heading">
+        <span>TDL credentials</span>
+      </h3>
+      <div id="tdlcredentials">
+        <fw-input label="Domain" icon-left="add-contact" id="tdldomain" state="normal"
+          placeholder="Enter your domain name" required clear-input></fw-input>
+        <fw-input label="Client ID" icon-left="add-contact" id="clientid" state="normal"
+          placeholder="Enter your client id" required clear-input></fw-input>
+        <fw-input label="Authorization Key" icon-left="password" type="password" id="auth-key" state="normal"
+          placeholder="Enter your Authorization key" required clear-input></fw-input>
+        <fw-input label="Program-Id" id="storeid" state="normal" placeholder="Enter your program id"
+          icon-left="text-field" required clear-input></fw-input>
+        <!-- <fw-input label="Search-Program-Id" id="searchId" state="normal" placeholder="Enter your search program id" icon-left ="text-field"
+          required clear-input></fw-input> -->
+        <fw-input label="Ocp-Apim-Subscription-Key" icon-left="password" type="password" id="sub-key" state="normal"
+          placeholder="Enter your Ocp-Apim-Subscription-Key" required clear-input></fw-input>
+      </div>
+    </section>
+    <section class="mar-bot fd-settings">
+      <h3 class="section-heading">
+        <span>freshdesk settings</span>
+      </h3>
+      <div id="fdsettings">
+        <label class="multiselect-label required" name="select-roles">Authorize Roles</label>
+        <select class="fd-roles" id="authroles"></select>
+        <fw-input label="Custom Field" icon-left="text-field" id="customfieldid" state="normal"
+          placeholder="Enter the custom field to store Customer Hash" required clear-input></fw-input>
+      </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+.left-Contain {
+    z-index   : 9;
+    box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, .3);
+}
+
+.right-contain {
+    max-height: 100vh;
+    position  : relative;
+}
+
+span#comm-validation,
+.success-message {
+    padding    : 10px 12px 10px 12px;
+    margin     : 20px 30px;
+    position   : fixed;
+    right      : 10px;
+    display    : none;
+    font-weight: 500;
+    z-index    : 10;
+}
+
+span#comm-validation {
+    background: #fff5f5;
+    border    : 0.5px solid #ffc1c1;
+}
+
+.validation {
+    color: red;
+}
+
+.input-section {
+    margin: auto;
+}
+
+.fileld-section,
+.input-section {
+    padding-left: 10px;
+}
+
+.black-and-bold {
+    font-weight: bold;
+    color      : black;
+}
+
+.required:after {
+    content     : '*';
+    font-size   : 14px;
+    color       : red;
+    font-weight : 600;
+    padding-left: 2px;
+}
+
+.input {
+    margin-top: 5px;
+}
+
+input {
+    padding: 8px 10px;
+}
+
+
+.validation {
+    color: red;
+}
+
+/* mar-bot */
+.mar-bot {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    box-sizing                 : border-box;
+    display                    : block;
+    margin-bottom              : 30px;
+}
+
+.section-heading {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    box-sizing                 : border-box;
+    font-family                : inherit;
+    font-weight                : 500;
+    line-height                : 1.1;
+    color                      : inherit;
+    margin-top                 : 17px;
+    font-size                  : 12px;
+    text-transform             : uppercase;
+    margin-bottom              : 30px;
+    position                   : relative;
+}
+
+.section-heading::after {
+    content         : '';
+    position        : absolute;
+    width           : 100%;
+    left            : 0;
+    top             : calc(50% - 0.5px);
+    height          : 1px;
+    background-color: #e5e5e5;
+    z-index         : -1;
+}
+
+.form-group {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    box-sizing                 : border-box;
+    margin-bottom              : 15px;
+}
+
+label {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    box-sizing                 : border-box;
+    display                    : inline-block;
+    max-width                  : 100%;
+    font-weight                : normal;
+    margin-bottom              : 10px;
+}
+
+.custom-input[type] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    box-sizing                 : border-box;
+    color                      : inherit;
+    font                       : inherit;
+    margin                     : 0;
+    font-family                : inherit;
+    font-size                  : inherit;
+    line-height                : inherit;
+    padding                    : 5px 10px;
+    border-radius              : 2px;
+    border                     : 1px solid #e5e5e5;
+    width                      : 100%;
+    height                     : 34px;
+}
+
+.custom-button {
+    display          : inline-block;
+    border-radius    : 2px;
+    color            : #fff;
+    outline          : 0;
+    background-color : #ffaf14;
+    border           : 1px solid #ffa800;
+    /* letter-spacing: 0.3px; */
+    font-weight      : 500;
+    transition       : 0.2s ease-in;
+    padding          : 6px 20px;
+    font-size        : 12px;
+    /* text-transform: uppercase; */
+    margin           : 0 auto;
+}
+
+.custom-button:hover {
+    background-color: #eb9b00;
+    border-color    : transparent;
+}
+
+.custom-button[disabled] {
+    cursor          : not-allowed;
+    transition      : 0.1s linear;
+    color           : #f3f5f7;
+    border          : 1px solid #8899a6;
+    background-image: linear-gradient(to bottom, #92a4b2, #8899a6);
+}
+
+.custom-button--secondary {
+    background-color: #fff;
+    color           : #333;
+    border-color    : #e5e5e5;
+}
+
+.custom-button--secondary:hover {
+    background-color: #f9f9f9;
+    border-color    : #e5e5e5;
+}
+
+.custom-button--danger {
+    background-color: hsl(0, 82%, 58%);
+    border-color    : hsl(0, 82%, 52%);
+}
+
+.custom-button--danger:hover {
+    background-color: hsl(0, 82%, 46%);
+    border-color    : transparent;
+}
+
+.custom-button span,
+.rule-header {
+    font-weight: 500;
+    font-size  : 14px;
+}
+
+.rule-header-text,
+.rule-select {
+    margin-right: 10px;
+    width       : 100%;
+}
+
+.rule-select {
+    display         : block;
+    background-color: #fff;
+    /* border          : 1px solid #e5e5e5; */
+    height          : 34px;
+    text-indent     : 5px;
+}
+
+.icon-btn {
+    flex-basis      : 45px;
+    flex-shrink     : 0;
+    border          : 0;
+    background-color: transparent;
+    border-radius   : 4px;
+    padding         : 0;
+}
+
+.icon-btn,
+[data-error] {
+    color: #f44336;
+}
+
+.icon-btn:hover,
+.section-heading::after {
+    background-color: #e5e5e5;
+}
+
+#verification {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    box-sizing                 : border-box;
+}
+
+.section-heading span {
+    padding-right   : 20px;
+    background-color: #fff;
+}
+
+.custom-input[type]:focus {
+    border : 1px solid #ffa800;
+    outline: none;
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    box-sizing                 : border-box;
+    margin                     : 0;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    background-color           : transparent;
+    padding-right              : 20px;
+    padding-left               : 5px;
+    color                      : #333;
+    margin-top                 : 70px;
+    font-size: 14px;
+    /* background-color: #FAFAFA; */
+}
+
+.hide {
+    display: none !important;
+}
+.spinner-wrapper {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    box-sizing                 : border-box;
+    background-color           : rgb(44, 92, 197);
+    border-radius              : 50%;
+    padding                    : 10px;
+    box-shadow                 : 0 3px 6px rgba(0, 0, 0, 0.4);
+    margin                     : 40px auto;
+    width                      : 50px;
+    display                    : none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.spinner {
+    animation  : rotate 2s linear infinite;
+    z-index    : 2;
+    margin     : 0 auto;
+    display    : block;
+    width      : 30px;
+    height     : 30px;
+    margin-top : 20%;
+    margin-left: 48%;
+}
+
+.spinner .path {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing     : auto;
+    text-rendering             : optimizeLegibility;
+    font-family                : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size                  : 12px;
+    line-height                : 1.42857;
+    color                      : #333333;
+    cx                         : 25;
+    cy                         : 25;
+    r                          : 20;
+    fill                       : none;
+    stroke-width               : 3;
+    box-sizing                 : border-box;
+    stroke                     : #fff;
+    stroke-linecap             : round;
+    animation                  : dash 1.5s ease-in-out infinite;
+    /* animation               : spin 2s linear infinite; */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray : 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray : 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray : 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+.overlay {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    z-index         : 999;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.validations {
+    display      : flex;
+    background   : #fff;
+    border-radius: 4px;
+    box-shadow   : 0 2px 4px 1px rgba(0, 0, 0, .12);
+    padding      : 10px 15px;
+    position     : fixed;
+    z-index      : 1;
+    top          : 10px;
+    left         : 4px;
+    right        : 20px;
+}
+
+label{
+    font-size: 12px;
+    color: rgb(71, 88, 103);
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    display: block;
+    padding-top: 0px;
+}
